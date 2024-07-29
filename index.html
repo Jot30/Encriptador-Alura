@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico"> <!-- icono arriba de la web -->
+    <link rel="stylesheet" href="./css/estilos.css"> <!-- 2 ponemos la carpeta para los estilos  -->
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <!-- Encabezado -->
+     <header>
+        <a href="#" rel=""> <!-- anclado,direccion URL,relacion -->
+            <img src="./imagenes/Logo.png" alt="Logo Alura" class="logo">  <!-- ruta de la imagen,texto alternativo, nueva clase -->
+        </a> 
+     </header>
+
+     <!-- Principal -->
+     <main> <!-- Seccion principal-- dividir en 2 secciones -->
+        <!-- primera seccion -->
+        <section class="encriptador"> <!-- nombre de la clase encriptador -->
+            <textarea class="encriptar" placeholder="Ingrese el texto aqui"></textarea> <!-- se asigna la tarea encriptar, poner el marcado de texto  -->
+            <div class="encriptador-aviso">  <!-- aviso del encriptador -->
+                <img src="./imagenes/Aviso.png" alt="Imagen Aviso" class="img-aviso" > <!-- imagen del aviso y texto alterno -->
+                <p class="texto-aviso">Solo letras minusculas y sin acentos</p> <!-- etiqueta parrafo -->
+            </div>
+            <div class="encriptador-contenedor"> <!-- dentro de este div ponemos los botones -->
+                <button type="submit" class="btn-encriptar">Encriptar</button>
+                <button type="submit" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <!-- segunda seccion -->
+        <section class="tarjeta">
+            <div class="tarjeta-contenedor"> <!--dentro del div poner la imgagen y los 2 parrafos -->
+                <img src="./imagenes/Muñeco.png" alt="Imagen Muñeco" class="img-muñeco">
+                <p class="texto-uno">Ningun mensaje fue encontrado</p>
+                <p class="texto-dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <textarea type="mensaje" class="evaluar" readonly ></textarea> <!-- asigamos una tarea de tipo mensaje, le ponemos nombre evaluar, readonly=no se puede modificar -->
+            <button type="submit" class="btn-copiar">Copiar</button>
+        </section>
+     </main>
+
+     <!-- pie de pagina -->
+      <footer>
+        <p class="copyright">&copy; Alura 2024 - Desarrollado por Jot30</p>
+        <a href="#" rel=""></a>
+      </footer>
+
+      <script src="./js/encriptador.js"></script>
+    
+</body>
+</html>
